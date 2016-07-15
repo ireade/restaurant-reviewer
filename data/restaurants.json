@@ -1,0 +1,103 @@
+{
+	"restaurants": [
+		{
+			"name": "Casper and Gambini's",
+			"id": "casper_and_gambinis",
+			"location": {
+				"address_line_1": "Blah",
+				"area": "Victoria Island"
+			},
+			"cuisine": "Contntinental",
+			"image": "/assets/img/casper.jpg",
+			"opening_hours": [
+				{
+					"day": "Monday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Tuesday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Wednesday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Thursday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Friday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Saturday",
+					"start": "12:00",
+					"end": "22:00"
+				},
+				{
+					"day": "Sunday",
+					"start": "12:00",
+					"end": "22:00"
+				}
+			],
+			"reviews": [
+				{
+					"stars": 5,
+					"name": "Ire Aderinokun",
+					"date": "date here",
+					"review": "Neutra williamsburg keytar franzen skateboard, shoreditch pickled banh mi pabst kale chips you probably haven't heard of them art party beard brooklyn knausgaard. Truffaut VHS retro ugh, cornhole cray pinterest tumblr master cleanse squid actually put a bird on it YOLO four loko ethical. "
+				},
+				{
+					"stars": 4,
+					"name": "Yemi Fadahunsi",
+					"date": "date here",
+					"review": "Neutra williamsburg keytar franzen skateboard, shoreditch pickled banh mi pabst kale chips you probably haven't heard of them art party beard brooklyn knausgaard. "
+				},
+				{
+					"stars": 3,
+					"name": "Ire Aderinokun",
+					"date": "date here",
+					"review": "Neutra williamsburg keytar franzen skateboard, shoreditch pickled banh mi pabst kale chips you probably haven't heard of them art party beard brooklyn knausgaard. Truffaut VHS retro ugh, "
+				},
+				{
+					"stars": 5,
+					"name": "Ire Aderinokun",
+					"date": "date here",
+					"review": "Neutra williamsburg keytar franzen skateboard, shoreditch pickled banh mi pabst kale chips you probably haven't heard of them art party beard brooklyn knausgaard. Truffaut VHS retro ugh, cornhole cray pinterest tumblr master cleanse squid actually put a bird on it YOLO four loko ethical. "
+				},
+				{
+					"stars": 2,
+					"name": "Ire Aderinokun",
+					"date": "date here",
+					"review": "Neutra williamsburg keytar franzen skateboard, shoreditch pickled banh mi pabst kale chips you probably haven't heard of them art party beard brooklyn knausgaard. Truffaut VHS retro ugh, cornhole cray pinterest tumblr master cleanse squid actually put a bird on it YOLO four loko ethical. cornhole cray pinterest tumblr master cleanse squid actually put a bird on it YOLO four loko ethical. "
+				}
+			]
+		},
+		{
+			"name": "RSVP",
+			"id": "casper_and_gambinis",
+			"location": {
+				"address_line_1": "Blah",
+				"area": "Victoria Island"
+			},
+			"cuisine": "Contntinental",
+			"image": "/assets/img/casper.jpg"
+		},
+		{
+			"name": "Terra Kulture",
+			"id": "casper_and_gambinis",
+			"location": {
+				"address_line_1": "Tiamiyu Savage Street",
+				"area": "Victoria Island"
+			},
+			"cuisine": "Nigerian",
+			"image": "/assets/img/casper.jpg"
+		}
+	]
+}

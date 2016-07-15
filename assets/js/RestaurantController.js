@@ -1,0 +1,1 @@
+fetch("/data/restaurants.json").then(function(t){return t.json()}).then(function(t){for(var a,e=location.search.split("?r=")[1],n=0;n<t.restaurants.length;n++){var r=t.restaurants[n];if(e===r.id){a=r;break}}var s=MyApp.templates.restaurant(a);document.getElementById("restaurantPage").innerHTML=s});
