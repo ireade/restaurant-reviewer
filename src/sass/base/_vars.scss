@@ -1,0 +1,29 @@
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,700,900,900italic,700italic,400italic);
+
+
+$font: 'Source Sans Pro', sans-serif;
+
+
+
+
+$primary-clr: rgb(223,64,90);
+$primary-accent-clr: rgb(135,49,78);
+
+$secondary-clr: rgb(49,30,62);
+$secondary-accent-clr: rgb(81,38,69);
+
+//$dark-grey: rgb(50,50,50);
+$bg-clr: rgb(245,245,245);
+
+
+$drop-shadow-clr: rgba(167,156,142,0.52);
+$box-shadow: 0 2px 4px 0 $drop-shadow-clr;
+
+
+
+// @function theme-opaque($alpha) {
+// 	@return rgba(255, 219, 58, $alpha)
+// }
+
+

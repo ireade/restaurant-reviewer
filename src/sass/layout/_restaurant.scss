@@ -1,0 +1,62 @@
+
+
+
+.restaurants {
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+
+.restaurant {
+	background: #fff;
+	box-shadow: $box-shadow;
+	width: 48%;
+	margin-bottom: 20px;
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 40px 10px;
+		position: relative;
+		overflow: hidden;
+		text-decoration: none;
+
+	}
+
+	.restaurant__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 0;
+		opacity: 0.2;
+
+	}
+
+	.restaurant__name,
+	.restaurant__stars {
+		z-index: 1;
+		width: 100%;
+		text-align: center;
+		color: $primary-clr;
+	}
+
+
+	.restaurant_details {
+		padding: 10px 15px;
+
+
+		.detail-icon {
+			float: right;
+		}
+	}
+}
