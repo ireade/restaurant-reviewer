@@ -36,12 +36,25 @@ mark {
 .site-title {
     font-size: 1.4rem;
     font-weight: 700;
+
+    a {
+        text-decoration: none;
+    }
 }
+
 
 .page-title {
     font-size: 3.2rem;
     font-weight: 300;
+}
 
+
+
+.page-title-lv2,
+.dialog-title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-align: center;
 }
 
 

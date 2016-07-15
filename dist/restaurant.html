@@ -21,32 +21,14 @@
             </div>
         </header>
         <!-- Page Starts -->
-<main class="site-main">
-
-    <header class="page-header">
-        <div class="wrapper">
-            <h2 class="page-title">
-                Restaurants
-            </h2>
-            <button class="open-filter-dialog floating-btn" type="button" aria-label="Open Filter Dialog">
-                <i class="fa fa-sliders"></i>
-            </button>
-        </div>
-    </header>
-
-    <div class="wrapper">
-        <ul class="restaurants" id="restaurants">
-            <!-- Default message -->         
-        </ul>
-    </div>
-    
+<main class="site-main" id="restaurantPage">    
 </main>
 
-<div class="dialog" id="filter-dialog" role="dialog" aria-hidden="true" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+<div class="dialog" id="review-dialog" role="dialog" aria-hidden="true" aria-labelledby="dialog-title" aria-describedby="dialog-description">
     <h2 class="dialog-title" id="dialog-title">
-        Filter Restaurants
+        Add a Review
     </h2>
-    <p class="sr-only" id="dialog-description">Use the form below to filter the restaurants by location, cuisine type, or number of stars</p>
+    <p class="sr-only" id="dialog-description">Use the form below to add your own review of this restaurant</p>
     <div class="dialog-content">
         <form>
             <select name="" id="">
@@ -78,8 +60,7 @@
 <script src="assets/js/templates.js"></script>
 <script src="assets/js/main.js"></script>  
 
-<script src="assets/js/IndexController.js"></script>  
+<script src="assets/js/RestaurantController.js"></script>  
 
     </body>
-</html> 
-
+</html>     

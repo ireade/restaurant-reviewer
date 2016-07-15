@@ -1,0 +1,65 @@
+
+.dialog-overlay {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(49,30,62,0.85);
+}
+
+.dialog {
+	z-index: 3;
+	background-color: #fff;
+	box-shadow: $box-shadow;
+
+	text-align: center;
+
+	width: 90%;
+	max-width: 600px;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.dialog-overlay[aria-hidden="true"],
+.dialog[aria-hidden="true"] {
+	display: none;
+}
+
+
+.dialog-overlay:not([aria-hidden="true"]),
+.dialog:not([aria-hidden="true"]) {
+	display: block;
+}
+
+.close-filter-dialog {
+	border: 0;
+	background-color: transparent;
+	font-family: $font;
+	font-size: 1.6rem;
+	text-decoration: underline;
+	font-weight: 300;
+}
+
+
+
+.dialog-title {
+	background: $primary-clr;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 20px 10px;
+}
+
+.dialog-content {
+	padding: 20px;
+}
+
+
+

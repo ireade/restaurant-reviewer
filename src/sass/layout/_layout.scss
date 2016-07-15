@@ -21,6 +21,10 @@
 	}
 }
 
+.site-main {
+	min-height: calc(100vh - 100px);
+}
+
 .site-footer {
 	background-color: #fff;
 	margin-top: 100px;

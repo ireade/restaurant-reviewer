@@ -1,168 +1,44 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Eat.Review.Lagos</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <meta name="theme-color" content="#DF405A">
-        <link rel="icon" href="./assets/img/icon.png">
-        <!-- <link rel="manifest" href="./manifest.json"> -->
+@@include('header.html')
+<main class="site-main">
 
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
-        <header class="site-header">
-            <div class="wrapper">
-                <h1 class="site-title">Eat.Review.Lagos</h1>
-            </div>
-        </header>
+    <header class="page-header">
+        <div class="wrapper">
+            <h2 class="page-title">
+                Restaurants
+            </h2>
+            <button class="open-filter-dialog floating-btn" type="button" aria-label="Open Filter Dialog">
+                <i class="fa fa-sliders"></i>
+            </button>
+        </div>
+    </header>
 
-        <!-- Page Starts -->
-        <main class="site-main">
+    <div class="wrapper">
+        <ul class="restaurants" id="restaurants">
+            <!-- Default message -->         
+        </ul>
+    </div>
+    
+</main>
 
-            <header class="page-header">
-                <div class="wrapper">
-                    <h2 class="page-title">
-                        Restaurants
-                    </h2>
-                    <button class="open-filter-dialog floating-btn" type="button" aria-label="Open Filter Dialog">
-                        <i class="fa fa-sliders"></i>
-                    </button>
-                </div>
-            </header>
-
-            <div class="wrapper">
-                <ul class="restaurants">
-
-                    <li class="restaurant">
-                        <a href="/casper.html">
-                            <img class="restaurant__img" src="/assets/img/casper.jpg" alt="">
-                            <h3 class="restaurant__name">Casper and Gambini's</h3>
-                            <p class="restaurant__stars">
-                                <span class="sr-only">5 Stars</span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
-                        </a>
-                        <div class="restaurant_details">
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Location</span>
-                                    <i class="fa fa-location-arrow"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Victoria Island
-                                </span>
-                            </p>
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Cuisine</span>
-                                    <i class="fa fa-cutlery"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Continental
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-
-
-
-                    <li class="restaurant">
-                        <a href="/casper.html">
-                            <img class="restaurant__img" src="/assets/img/casper.jpg" alt="">
-                            <h3 class="restaurant__name">Casper and Gambini's</h3>
-                            <p class="restaurant__stars">
-                                <span class="sr-only">5 Stars</span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
-                        </a>
-                        <div class="restaurant_details">
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Location</span>
-                                    <i class="fa fa-location-arrow"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Victoria Island
-                                </span>
-                            </p>
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Cuisine</span>
-                                    <i class="fa fa-cutlery"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Continental
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-
-
-                    <li class="restaurant">
-                        <a href="/casper.html">
-                            <img class="restaurant__img" src="/assets/img/casper.jpg" alt="">
-                            <h3 class="restaurant__name">Souther Sun Hotel and Bar</h3>
-                            <p class="restaurant__stars">
-                                <span class="sr-only">5 Stars</span>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </p>
-                        </a>
-                        <div class="restaurant_details">
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Location</span>
-                                    <i class="fa fa-location-arrow"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Victoria Island
-                                </span>
-                            </p>
-                            <p>
-                                <span class="detail-icon">
-                                    <span class="sr-only">Cuisine</span>
-                                    <i class="fa fa-cutlery"></i>
-                                </span>
-                                <span class="detail-text">
-                                    Continental
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
+<div class="dialog" id="filter-dialog" role="dialog" aria-hidden="true" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <h2 class="dialog-title" id="dialog-title">
+        Filter Restaurants
+    </h2>
+    <p class="sr-only" id="dialog-description">Use the form below to filter the restaurants by location, cuisine type, or number of stars</p>
+    <div class="dialog-content">
+        <form>
+            <select name="" id="">
+                <option value="">Stuff</option>
+            </select>
             
-        </main>
-        <div class="dialog"></div>
-        <!-- Page Ends -->
+        </form>
+        <button class="close-filter-dialog">Close Window</button>
+    </div>
+</div>
 
-        <footer class="site-footer">
-            <div class="wrapper">
-                Made by Ire Aderinokun
-            </div>
-        </footer>
+@@include('footer.html')  
 
-        <div class="dialog-overlay"></div>
+<script src="assets/js/IndexController.js"></script>  
 
-        
-        <script src="assets/js/lib/jquery.min.js"></script>
-        <script src="assets/js/lib/moment.min.js"></script>
-        <script src="assets/js/lib/handlebars.min.js"></script>
-        <script src="assets/js/lib/selectize.min.js"></script>
-        <script src="assets/js/lib/idb.min.js"></script>
-        <script src="assets/js/lib/polyfill.min.js"></script>
+@@include('footer-last.html') 
 
-        <script src="assets/js/handlebars-helpers.js"></script>
-        <script src="assets/js/templates.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
-</html>

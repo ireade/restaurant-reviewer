@@ -1,0 +1,32 @@
+{{#each restaurants}}
+<li class="restaurant">
+    <a href="/restaurant.html?r={{id}}">
+        <img class="restaurant__img" src="{{image}}" alt="">
+        <h3 class="restaurant__name">{{name}}</h3>
+        <p class="restaurant__stars">
+            <span class="sr-only">{{reviewAvergaeNumber reviews}} out of 5 Stars</span>
+            {{{reviewAvergaeIcons reviews}}}
+        </p>
+    </a>
+    <div class="restaurant_details">
+        <p>
+            <span class="detail-icon">
+                <span class="sr-only">Location</span>
+                <i class="fa fa-location-arrow"></i>
+            </span>
+            <span class="detail-text">
+                {{location.area}}
+            </span>
+        </p>
+        <p>
+            <span class="detail-icon">
+                <span class="sr-only">Cuisine</span>
+                <i class="fa fa-cutlery"></i>
+            </span>
+            <span class="detail-text">
+                {{cuisine}}
+            </span>
+        </p>
+    </div>
+</li>
+{{/each}}
