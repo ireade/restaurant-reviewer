@@ -20,8 +20,8 @@ You must build a restaurant reviews application with a focus on accessibility. T
 
 ## My App - Eat.Review.Lagos
 
-![](screenshot.png)
+![Screenshot of application](screenshot.png)
 
 ### Accessibility Tests
 
-![](accessibility-tests.png)
+![Screenshot of accesibility tests showing all tests passed](accessibility-tests.png)

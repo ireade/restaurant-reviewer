@@ -35,9 +35,9 @@ this["MyApp"]["templates"]["restaurant"] = Handlebars.template({"1":function(dep
     + alias3(((helper = (helper = helpers.image_alt || (depth0 != null ? depth0.image_alt : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image_alt","hash":{},"data":data}) : helper)))
     + "\">\n        </div>\n\n        <div class=\"information__content\">\n            <section>\n                <h4><span class=\"sr-only\">Location</span> <i class=\"fa fa-location-arrow\"></i></h4>\n                <p>"
     + alias3(alias4(((stack1 = (depth0 != null ? depth0.location : depth0)) != null ? stack1.address_line_1 : stack1), depth0))
-    + "</p>\n                <p>"
+    + ",</p>\n                <p>"
     + alias3(alias4(((stack1 = (depth0 != null ? depth0.location : depth0)) != null ? stack1.area : stack1), depth0))
-    + "</p>\n            </section>\n            <section>\n                <h4><span class=\"sr-only\">Cuisine</span> <i class=\"fa fa-cutlery\"></i></h4>\n                <p>"
+    + ",</p>\n                <p>Lagos, Nigeria</p>\n            </section>\n            <section>\n                <h4><span class=\"sr-only\">Cuisine</span> <i class=\"fa fa-cutlery\"></i></h4>\n                <p>"
     + alias3(((helper = (helper = helpers.cuisine || (depth0 != null ? depth0.cuisine : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"cuisine","hash":{},"data":data}) : helper)))
     + "</p>\n            </section>\n            <section>\n                <h4><span class=\"sr-only\">Opening Hours</span> <i class=\"fa fa-clock-o\"></i></h4>\n                <table class=\"opening-hours\">\n                    <thead class=\"sr-only\">\n                        <tr>\n                            <th>Day</th>\n                            <th>Times</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n"
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.opening_hours : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
