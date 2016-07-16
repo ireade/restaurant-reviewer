@@ -16,7 +16,7 @@ this["MyApp"]["templates"]["restaurant"] = Handlebars.template({"1":function(dep
   return "            <article class=\"review\">\n                <p class=\"review__author\" rel=\"author\">"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
     + "</p>\n                <time class=\"review__date\">"
-    + alias3(((helper = (helper = helpers.date || (depth0 != null ? depth0.date : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"date","hash":{},"data":data}) : helper)))
+    + alias3((helpers.momentDate || (depth0 && depth0.momentDate) || alias1).call(depth0,(depth0 != null ? depth0.date : depth0),{"name":"momentDate","hash":{},"data":data}))
     + "</time>\n                <p class=\"review__stars\">\n                    <span class=\"sr-only\">"
     + alias3(((helper = (helper = helpers.stars || (depth0 != null ? depth0.stars : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"stars","hash":{},"data":data}) : helper)))
     + " out of 5 Stars</span>\n                    "
@@ -31,7 +31,9 @@ this["MyApp"]["templates"]["restaurant"] = Handlebars.template({"1":function(dep
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
     + "\n        </h2>\n    </div>\n</header>\n\n<div class=\"wrapper\">\n    <section class=\"information\">\n        <h3 class=\"sr-only\">Information</h3>\n        <div class=\"information__img\">\n            <img src=\""
     + alias3(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image","hash":{},"data":data}) : helper)))
-    + "\" alt=\"\">\n        </div>\n\n        <div class=\"information__content\">\n            <section>\n                <h4><span class=\"sr-only\">Location</span> <i class=\"fa fa-location-arrow\"></i></h4>\n                <p>"
+    + "\" alt=\""
+    + alias3(((helper = (helper = helpers.image_alt || (depth0 != null ? depth0.image_alt : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image_alt","hash":{},"data":data}) : helper)))
+    + "\">\n        </div>\n\n        <div class=\"information__content\">\n            <section>\n                <h4><span class=\"sr-only\">Location</span> <i class=\"fa fa-location-arrow\"></i></h4>\n                <p>"
     + alias3(alias4(((stack1 = (depth0 != null ? depth0.location : depth0)) != null ? stack1.address_line_1 : stack1), depth0))
     + "</p>\n                <p>"
     + alias3(alias4(((stack1 = (depth0 != null ? depth0.location : depth0)) != null ? stack1.area : stack1), depth0))

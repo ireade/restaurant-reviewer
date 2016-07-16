@@ -7,7 +7,6 @@
         
         <meta name="theme-color" content="#DF405A">
         <link rel="icon" href="./assets/img/icon.png">
-        <!-- <link rel="manifest" href="./manifest.json"> -->
 
         <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/main.css">
@@ -16,7 +15,7 @@
         <header class="site-header">
             <div class="wrapper">
                 <h1 class="site-title">
-                    <a href="/">Eat.Review.Lagos</a>
+                    <a href="/">Eat . Review . Lagos</a>
                 </h1>
             </div>
         </header>
@@ -35,8 +34,8 @@
     </header>
 
     <div class="wrapper">
-        <ul class="restaurants" id="restaurants">
-            <!-- Default message -->         
+        <ul class="restaurants" id="restaurants" aria-live="polite">
+            Loading Restaurants...   
         </ul>
     </div>
     
@@ -48,30 +47,59 @@
     </h2>
     <p class="sr-only" id="dialog-description">Use the form below to filter the restaurants by location, cuisine type, or number of stars</p>
     <div class="dialog-content">
-        <form>
-            <select name="" id="">
-                <option value="">Stuff</option>
-            </select>
-            
+        <form id="filter-form">
+            <div class="input-group">
+                <label for="filter_location">
+                    <span class="label">Filter by Location</span>
+                    <select name="filter_location" id="filter_location">
+                        <option value="all">All</option>
+                        <option value="Victoria Island">Victoria Island</option>
+                        <option value="Ikoyi">Ikoyi</option>
+                        <option value="Lekki">Lekki</option>
+                        <option value="Yaba">Yaba</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="filter_cuisine">
+                    <span class="label">Filter by Cuisine</span>
+                    <select name="filter_cuisine" id="filter_cuisine">
+                        <option value="all">All</option>
+                        <option value="Nigerian">Nigerian</option>
+                        <option value="Continental">Continental</option>
+                        <option value="American">American</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="filter_rating">
+                    <span class="label">Filter by Star Rating</span>
+                    <select name="filter_rating" id="filter_rating">
+                        <option value="all">All</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="input-group--full">
+                <button type="submit" class="close-filter-dialog">Apply Filter</button>
+            </div> 
         </form>
-        <button class="close-filter-dialog">Close Window</button>
     </div>
 </div>
 
         
 <!-- Page Ends -->
-<footer class="site-footer">
-    <div class="wrapper">
-        Made by Ire Aderinokun
-    </div>
-</footer>
-
 <div class="dialog-overlay" aria-hidden="true"></div>
 
 
-
-<!-- <script src="assets/js/lib/moment.min.js"></script> -->
-
+<script src="assets/js/lib/moment.min.js"></script>
 <script src="assets/js/lib/handlebars.min.js"></script>
 
 <script src="assets/js/handlebars-helpers.js"></script>
