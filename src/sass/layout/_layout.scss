@@ -23,12 +23,9 @@
 
 .site-main {
 	min-height: calc(100vh - 100px);
+	margin-bottom: 100px;
 }
 
-.site-footer {
-	background-color: #fff;
-	margin-top: 100px;
-}
 
 
 
@@ -54,31 +51,6 @@
 
 
 
-.floating-btn {
-	height: 50px;
-	width: 50px;
-	background-color: #fff;
-	box-shadow: $box-shadow;
-	border-radius: 50%;
-
-	border: 3px solid #fff;
-	cursor: pointer;
-
-	position: absolute;
-	bottom: -25px;
-	left: 50%;
-	margin-left: -25px;
-
-	font-size: 2rem;
-
-	outline: none;
-}
-
-.floating-btn:focus,
-.floating-btn:hover {
-	background: $primary-clr;
-	color: #fff;
-}
 
 
 

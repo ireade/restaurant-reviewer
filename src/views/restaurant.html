@@ -1,4 +1,4 @@
-@@include('header.html')
+@@include('partials/header.html')
 <main class="site-main" id="restaurantPage">    
 </main>
 
@@ -8,18 +8,82 @@
     </h2>
     <p class="sr-only" id="dialog-description">Use the form below to add your own review of this restaurant</p>
     <div class="dialog-content">
-        <form>
-            <select name="" id="">
-                <option value="">Stuff</option>
-            </select>
-            
+        <form id="review-form">
+            <div class="input-group">
+                <label for="review_author"> 
+                    <span class="label">Your Name * <span class="sr-only">Required</span></span>
+                    <input type="text" name="review_author" id="review_author" required>
+                </label>
+            </div>
+
+            <div class="input-group">
+                <label for="review_date"> 
+                    <span class="label">Date * <span class="sr-only">Required</span></span>
+                    <input type="date" name="review_date" id="review_date" required>
+                </label>
+            </div>
+
+            <div class="input-group--full">
+                <fieldset class="checkbox-fieldset">
+                    <legend class="label">You Star Rating * <span class="sr-only">Required</span></legend>
+                
+                    <label> 
+                        <input type="radio" value="1" name="review_rating" required>
+                        <span class="label--checkbox"> 
+                            <i class="fa fa-star"></i> 
+                            <span class="sr-only">1 Star</span>
+                        </span>
+                    </label>
+                    <label> 
+                        <input type="radio" value="2" name="review_rating" required>
+                        <span class="label--checkbox"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <span class="sr-only">2 Stars</span>
+                        </span>
+                    </label>
+                    <label> 
+                        <input type="radio" value="3" name="review_rating" required>
+                        <span class="label--checkbox"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <span class="sr-only">3 Stars</span>
+                        </span>
+                    </label>
+                    <label> 
+                        <input type="radio" value="4" name="review_rating" required>
+                        <span class="label--checkbox"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <span class="sr-only">4 Stars</span>
+                        </span>
+                    </label>
+                    <label for="review_date"> 
+                        <input type="radio" value="5" name="review_rating" required>
+                        <span class="label--checkbox"> 
+                            <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+                            <span class="sr-only">5 Stars</span>
+                        </span>
+                    </label>
+                </fieldset>
+            </div>
+
+
+            <div class="input-group--full">
+                <label for="review_text"> 
+                    <span class="label">Your Review * <span class="sr-only">Required</span></span>
+                    <textarea name="review_text" id="review_text" rows="3" required></textarea>
+                </label>
+            </div>
+
+
+
+            <div class="input-group--full">
+                <button type="submit" class="close-review-dialog">Add your Review</button>
+            </div> 
         </form>
-        <button class="close-filter-dialog">Close Window</button>
     </div>
 </div>
 
-@@include('footer.html')  
+@@include('partials/footer.html')  
 
 <script src="assets/js/RestaurantController.js"></script>  
 
-@@include('footer-last.html')     
+@@include('partials/footer-last.html')     

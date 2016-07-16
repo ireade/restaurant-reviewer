@@ -10,7 +10,7 @@
     <section class="information">
         <h3 class="sr-only">Information</h3>
         <div class="information__img">
-            <img src="{{image}}" alt="">
+            <img src="{{image}}" alt="{{image_alt}}">
         </div>
 
         <div class="information__content">
@@ -63,7 +63,7 @@
             {{#each reviews}}
             <article class="review">
                 <p class="review__author" rel="author">{{name}}</p>
-                <time class="review__date">{{date}}</time>
+                <time class="review__date">{{momentDate date}}</time>
                 <p class="review__stars">
                     <span class="sr-only">{{stars}} out of 5 Stars</span>
                     {{reviewStars stars}}

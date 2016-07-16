@@ -36,6 +36,8 @@ mark {
 .site-title {
     font-size: 1.4rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
 
     a {
         text-decoration: none;
@@ -66,7 +68,6 @@ mark {
 
 
 .sr-only {
-    opacity: 0;
     position: absolute;
     clip: rect(1px 1px 1px 1px); /* syntax for IE6 & IE7 */
     clip: rect(1px, 1px, 1px, 1px);
@@ -76,6 +77,12 @@ mark {
 .restaurant__name {
     font-weight: 700;
     font-size: 2.5rem;
+}
+
+
+.label {
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 

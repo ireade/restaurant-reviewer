@@ -1,25 +1,5 @@
 /* ----------------------------
 
-	Table of Contents
-	=================
-
-	1. Global Functons
-
-		1.1 Navigation
-		1.2 Display Message Prototype
-		1.3 Loading Animation
-
-	2. Index Controller
-
-	3. Journey Prototype
-
-	4. Form Controller
-	
----------------------------- */
-
-
-/* ----------------------------
-
 	2. Dialog Prototype
 	
 ---------------------------- */
@@ -36,6 +16,9 @@ function Dialog(dialogEl, overlayEl, openDialogSel, closeDialogSel) {
 	this.firstFocusableEl = this.focusableEls[0];
 	this.lastFocusableEl = this.focusableEls[ this.focusableEls.length - 1 ];
 
+	this.elsToHide = document.querySelectorAll('.site-main, .site-header, .site-footer');
+	this.elsToHide = Array.prototype.slice.call(this.elsToHide);
+
 
 	this.addEventListeners(openDialogSel, closeDialogSel);
 
@@ -49,6 +32,11 @@ Dialog.prototype.open = function() {
 
 	this.dialogEl.removeAttribute('aria-hidden');
 	this.overlayEl.removeAttribute('aria-hidden');
+
+	for (var i = 0; i < this.elsToHide.length; i++) {
+		this.elsToHide[i].setAttribute('aria-hidden', true);
+	}
+
 
 	this.focusedElBeforeOpen = document.activeElement;
 
@@ -65,6 +53,11 @@ Dialog.prototype.open = function() {
 };
 
 Dialog.prototype.close = function() {
+
+	for (var i = 0; i < this.elsToHide.length; i++) {
+		this.elsToHide[i].removeAttribute('aria-hidden');
+	}
+
 
 	this.dialogEl.setAttribute('aria-hidden', true);
 	this.overlayEl.setAttribute('aria-hidden', true);
@@ -124,25 +117,54 @@ Dialog.prototype.addEventListeners = function(openDialogSel, closeDialogSel) {
 
 	var Dialog = this;
 
-	var openDialogEls = document.querySelectorAll(openDialogSel);
-	for ( var i = 0; i < openDialogEls.length; i++ ) {
-		openDialogEls[i].addEventListener('click', function() { 
-			Dialog.open();
-		});
-	}
+	if ( openDialogSel ) {
+		var openDialogEls = document.querySelectorAll(openDialogSel);
+		for ( var i = 0; i < openDialogEls.length; i++ ) {
+			openDialogEls[i].addEventListener('click', function() { 
+				Dialog.open();
+			});
+		}
 
-	var closeDialogEls = document.querySelectorAll(closeDialogSel);
-	for ( var i = 0; i < closeDialogEls.length; i++ ) {
-		closeDialogEls[i].addEventListener('click', function() {
-			Dialog.close();
-		});
+	}
+	
+	if ( closeDialogSel ) {
+		var closeDialogEls = document.querySelectorAll(closeDialogSel);
+		for ( var i = 0; i < closeDialogEls.length; i++ ) {
+			closeDialogEls[i].addEventListener('click', function() {
+				Dialog.close();
+			});
+		}
 	}
 
 };
 
 
 
+/* ----------------------------
 
+	Moment
+	
+---------------------------- */
+
+var momentDate = function (rawDate) {
+
+	var year = rawDate.split('-')[0],
+		month = rawDate.split('-')[1],
+		day = rawDate.split('-')[2];
+
+	var m = moment().year(year).month(month).date(day);
+	m = m.calendar(null, {
+		sameDay: '[Today]',
+		nextDay: '[Tomorrow]',
+		nextWeek: '[Next] dddd',
+		lastDay: '[Yesterday]',
+		lastWeek: '[Last] dddd',
+		sameElse: 'dddd Do MMMM'
+	});
+
+	return m;
+
+};
 
 
 

@@ -64,12 +64,12 @@ gulp.task('js', function() {
 var fileinclude = require('gulp-file-include');
 
 gulp.task('fileinclude', function() {
-  gulp.src(['src/views/index.html', 'src/views/restaurant.html'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest('dist/'));
+	gulp.src(['src/views/index.html', 'src/views/restaurant.html'])
+		.pipe(fileinclude({
+			prefix: '@@',
+			basepath: '@file'
+		}))
+		.pipe(gulp.dest('dist/'));
 });
 
 
