@@ -8,7 +8,7 @@
 				"area": "Victoria Island"
 			},
 			"cuisine": "American",
-			"image": "/assets/img/casper.jpg",
+			"image": "./assets/img/casper.jpg",
 			"image_alt": "Chicken Suya and Chips",
 			"opening_hours": [
 				{
@@ -89,7 +89,7 @@
 				"area": "Victoria Island"
 			},
 			"cuisine": "Continental",
-			"image": "/assets/img/rsvp.jpg",
+			"image": "./assets/img/rsvp.jpg",
 			"image_alt": "Spring Rolls and Salad",
 			"opening_hours": [
 				{
@@ -169,7 +169,7 @@
 				"area": "Victoria Island"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/terra.jpg",
+			"image": "./assets/img/terra.jpg",
 			"image_alt": "Chicken and Chips, Sweet potato Mash",
 			"opening_hours": [
 				{
@@ -249,7 +249,7 @@
 				"area": "Ikoyi"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/ss.jpg",
+			"image": "./assets/img/ss.jpg",
 			"image_alt": "Dim Sum",
 			"opening_hours": [
 				{
@@ -329,7 +329,7 @@
 				"area": "Yaba"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/whitehouse.jpg",
+			"image": "./assets/img/whitehouse.jpg",
 			"image_alt": "Beef Stew",
 			"opening_hours": [
 				{
@@ -409,7 +409,7 @@
 				"area": "Lekki"
 			},
 			"cuisine": "Continental",
-			"image": "/assets/img/bar.jpg",
+			"image": "./assets/img/bar.jpg",
 			"image_alt": "Sandwhich and Chips",
 			"opening_hours": [
 				{
