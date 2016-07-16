@@ -48,7 +48,7 @@ this["MyApp"]["templates"]["restaurant"] = Handlebars.template({"1":function(dep
 this["MyApp"]["templates"]["restaurantSnippet"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "<li class=\"restaurant\">\n    <a href=\"/restaurant.html?r="
+  return "<li class=\"restaurant\">\n    <a href=\"./restaurant.html?r="
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
     + "\">\n        <img class=\"restaurant__img\" src=\""
     + alias3(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image","hash":{},"data":data}) : helper)))
