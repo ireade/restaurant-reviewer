@@ -4,8 +4,10 @@ function RestaurantController() {
 }
 
 
-
 var reviewDialog;
+var reviewDialogEl = document.getElementById('review-dialog');
+var dialogOverlay = document.querySelector('.dialog-overlay');
+var reviewForm = document.getElementById('review-form');
 
 
 RestaurantController.prototype.addReview = function(author, date, rating, text) {
@@ -20,7 +22,7 @@ RestaurantController.prototype.addReview = function(author, date, rating, text) 
 			}
 		}
 		return html;
-	};
+	}
 
 	var reviewsList = document.querySelector('.ul-reviews');
 
@@ -47,7 +49,7 @@ RestaurantController.prototype._init = function() {
 
 	var restaurantPageEl = document.getElementById('restaurantPage');
 
-	fetch('/data/restaurants.json')
+	fetch('./data/restaurants.json')
 	.then(function(response) {
 		return response.json();
 	})
@@ -75,18 +77,8 @@ RestaurantController.prototype._init = function() {
 
 
 
-var RestaurantController = new RestaurantController;
+var Restaurant = new RestaurantController;
 
-
-
-
-
-var reviewDialogEl = document.getElementById('review-dialog');
-var dialogOverlay = document.querySelector('.dialog-overlay');
-
-
-
-var reviewForm = document.getElementById('review-form');
 
 reviewForm.addEventListener('submit', function(e) {
 
@@ -102,7 +94,7 @@ reviewForm.addEventListener('submit', function(e) {
 		return;
 	}
 
-	RestaurantController.addReview(author, date, rating, text);
+	Restaurant.addReview(author, date, rating, text);
 	reviewDialog.close();
 
 });

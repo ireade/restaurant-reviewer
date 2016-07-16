@@ -1,16 +1,11 @@
-
-
-
 /* ----------------------------
 
-	2. IndexController
+	IndexController
 	
 ---------------------------- */
 
 function IndexController() {
-
 	this._init();
-
 }
 
 
@@ -63,7 +58,7 @@ IndexController.prototype.filterRestaurants = function(filterLocation, filterCui
 	var restaurantsEl = document.getElementById('restaurants');
 	restaurantsEl.setAttribute('aria-busy', 'true');
 
-	fetch('/data/restaurants.json')
+	fetch('./data/restaurants.json')
 	.then(function(response) {
 		return response.json();
 	})
@@ -91,7 +86,7 @@ IndexController.prototype._init = function() {
 
 	restaurantsEl.setAttribute('aria-busy', 'true');
 
-	fetch('/data/restaurants.json')
+	fetch('./data/restaurants.json')
 	.then(function(response) {
 		return response.json();
 	})
@@ -114,9 +109,6 @@ var filterDialogEl = document.getElementById('filter-dialog');
 var dialogOverlay = document.querySelector('.dialog-overlay');
 
 new Dialog(filterDialogEl, dialogOverlay, '.open-filter-dialog', '.close-filter-dialog');
-
-
-
 
 
 
