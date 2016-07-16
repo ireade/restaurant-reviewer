@@ -4,12 +4,12 @@
 			"name": "Casper and Gambini's",
 			"id": "casper_and_gambinis",
 			"location": {
-				"address_line_1": "Blah",
+				"address_line_1": "3 Agoro Odiyan St",
 				"area": "Victoria Island"
 			},
 			"cuisine": "American",
 			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Suya and Chips",
+			"image_alt": "Chicken Suya and Chips",
 			"opening_hours": [
 				{
 					"day": "Monday",
@@ -85,12 +85,12 @@
 			"name": "RSVP",
 			"id": "rsvp",
 			"location": {
-				"address_line_1": "Blah",
+				"address_line_1": "26 Eletu Ogabi",
 				"area": "Victoria Island"
 			},
 			"cuisine": "Continental",
-			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Wings and Chips",
+			"image": "/assets/img/rsvp.jpg",
+			"image_alt": "Spring Rolls and Salad",
 			"opening_hours": [
 				{
 					"day": "Monday",
@@ -169,8 +169,8 @@
 				"area": "Victoria Island"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Wings and Chips",
+			"image": "/assets/img/terra.jpg",
+			"image_alt": "Chicken and Chips, Sweet potato Mash",
 			"opening_hours": [
 				{
 					"day": "Monday",
@@ -245,12 +245,12 @@
 			"name": "Southern Sun Hotel",
 			"id": "southern_sun",
 			"location": {
-				"address_line_1": "Alfred Rewane Road",
+				"address_line_1": "1 Alfred Rewane Road",
 				"area": "Ikoyi"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Wings and Chips",
+			"image": "/assets/img/ss.jpg",
+			"image_alt": "Dim Sum",
 			"opening_hours": [
 				{
 					"day": "Monday",
@@ -325,12 +325,12 @@
 			"name": "Whitehouse",
 			"id": "whitehouse",
 			"location": {
-				"address_line_1": "Herbert Macaulay Road",
+				"address_line_1": "300 Herbert Macaulay Road",
 				"area": "Yaba"
 			},
 			"cuisine": "Nigerian",
-			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Wings and Chips",
+			"image": "/assets/img/whitehouse.jpg",
+			"image_alt": "Beef Stew",
 			"opening_hours": [
 				{
 					"day": "Monday",
@@ -405,12 +405,12 @@
 			"name": "Bar Bar",
 			"id": "bar_bar",
 			"location": {
-				"address_line_1": "Victoria Abrobieke Street",
+				"address_line_1": "21 Victoria Abrobieke Street",
 				"area": "Lekki"
 			},
 			"cuisine": "Continental",
-			"image": "/assets/img/casper.jpg",
-			"image_alt": "A Meal of Chicken Wings and Chips",
+			"image": "/assets/img/bar.jpg",
+			"image_alt": "Sandwhich and Chips",
 			"opening_hours": [
 				{
 					"day": "Monday",
