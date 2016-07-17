@@ -42,14 +42,20 @@ gulp.task('css', function() {
 	JS
 ************* */
 var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+
 var jsFiles = 'src/scripts/**/*.js';
 
-var jsMainFiles = 'src/scripts/main/*.js';
-//var jsSWFile = 'src/scripts/sw/service-worker.js';
+var jsControllerFiles = ['src/scripts/main/IndexController.js', 'src/scripts/main/RestaurantController.js'];
+var jsMainFiles = ['src/scripts/main/main.js', 'src/scripts/main/handlebars-helpers.js', 'src/scripts/main/templates.js'];
 
 
-gulp.task('js', function() {
+gulp.task('js', ['templates'], function() {
 	gulp.src(jsMainFiles)
+		.pipe(uglify())
+		.pipe(concat('main.js'))
+		.pipe(gulp.dest('dist/assets/js'));
+	gulp.src(jsControllerFiles)
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/assets/js'));
 });
@@ -79,7 +85,7 @@ var declare = require('gulp-declare');
 var concat = require('gulp-concat');
 
 gulp.task('templates', function () {
-    gulp.src('src/views/templates/*.hbs')
+    return gulp.src('src/views/templates/*.hbs')
       .pipe(handlebars())
       .pipe(wrap('Handlebars.template(<%= contents %>)'))
       .pipe(declare({
@@ -87,7 +93,7 @@ gulp.task('templates', function () {
           noRedeclare: true, // Avoid duplicate declarations
       }))
       .pipe(concat('templates.js'))
-      .pipe(gulp.dest('dist/assets/js/'));
+      .pipe(gulp.dest('src/scripts/main/'));
 });
 
 

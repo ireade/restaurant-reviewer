@@ -41,6 +41,12 @@ mark {
 
     a {
         text-decoration: none;
+        outline: none;
+        padding: 2px 5px;
+    }
+
+    a:focus {
+        border: 2px solid #fff;
     }
 }
 
