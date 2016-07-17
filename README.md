@@ -2,6 +2,8 @@
 
 Project #3 for the [Udacity Senior Web Developer Nanodegree](https://www.udacity.com/course/senior-web-developer-nanodegree--nd802)
 
+Passed on 17 July 2016
+
 ## Project Brief
 
 You must build a restaurant reviews application with a focus on accessibility. The application must include restaurant names, a photograph, address and operating hours for each restaurant along with reviews, including the name of the reviewer, date of review, 5-star rating system, and comments. The application must include an application header, a menu providing multiple ways to filter the restaurants. When viewing a specific restaurant, current reviews must be displayed along with a form for the user to submit their own review.
